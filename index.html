@@ -6,40 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xact Mind</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bg-light-blue {
+            background-color: #b4c9e7;
+        }
+        .car-img-top {
+            height: 200px; 
+            object-fit: cover; 
+            width: 100%; 
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
         <div class="container">
-            <div class="container-fluid" id="div1">
-                <a class="navbar-brand" href="#"><img src="https://mlpma8bvuhmo.i.optimole.com/w:auto/h:auto/q:mauto/ig:avif/https://xactmind.com/wp-content/uploads/2024/02/cropped-xactmind-black-logo.png" width="150px" height="30px"></a>
-               </div>
-            <div class="collapse navbar-collapse text-center" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Company</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="tel:+447939444967">Client Support 03498887772</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-primary" href="#">Contact Us</a>
-                    </li>
-                </ul>
+            <div class="row w-100">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a class="navbar-brand" href="#">
+                        <img class="object-fit-cover"
+                            src="https://mlpma8bvuhmo.i.optimole.com/w:auto/h:auto/q:mauto/ig:avif/https://xactmind.com/wp-content/uploads/2024/02/cropped-xactmind-black-logo.png"
+                            width="150px" height="30px" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <div class="collapse navbar-collapse text-center" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./service.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Company</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Resources</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="tel:+447939444967"><span class="badge text-bg-secondary">Client Support</span> 03498887772</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -48,7 +68,7 @@
         <div class="row">
             <div class="col-md-6">
                 <h1>Xact Mind is a UK based leading Software and AI development company</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sed.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, accusantium.</p>
                 <button class="btn btn-primary">Schedule</button>
                 <button class="btn btn-secondary">Services</button>
             </div>
@@ -96,24 +116,27 @@
             </div>
             <div class="col-md-6">
                 <div class="ratio ratio-16x9">
-                    <iframe src="https://xactmind.com/wp-content/uploads/2024/02/xactmind-home-video.mp4"
-                        title="Xact Mind Video" allowfullscreen></iframe>
+                    <video class="w-100" autoplay muted loop>
+                        <source src="https://xactmind.com/wp-content/uploads/2024/02/xactmind-home-video.mp4"
+                            type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container my-5 bg-info">
+    <div class="container my-5 bg-light-blue py-2">
         <h2 class=" mb-4">Our Services</h2>
-        <div class="row">
+        <div class="row ">
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
                     <img src="https://d2bwo9zemjwxh5.cloudfront.net/image-logo/7703921/last_week_in_ai9d471_1200x628.jpg?s=b9c15f6991184ac8fcad234b93323e7f&e=png"
-                        class="card-img-top mx-auto rounded" style="width: 100px;" alt="AI ">
+                        class="card-img-top  rounded" style="width: 100px;" alt="AI ">
                     <div class="card-body">
                         <h5 class="card-title">AI Development Services</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum reiciendis
                             quisquam veritatis est obcaecati numquam ipsa praesentium? Officiis commodi laborum, atque
-                            harum sint iste nobis temporibus accusantium ratione alias ut.</p>
+                            harum sint iste nobis temporibus accusantium ratione alias ut Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quibusdam!.</p>
                         <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
@@ -198,7 +221,7 @@
             <div class="col-md-3 mb-4">
                 <div class="card h-100">
                     <img src="https://mlpma8bvuhmo.i.optimole.com/w:auto/h:auto/q:mauto/ig:avif/https://xactmind.com/wp-content/uploads/2024/02/waqas-ahmed-xactmind-e1707101961410.jpg"
-                        class="card-img-top" alt="seran ahmed">
+                        class="car-img-top" alt="seran ahmed">
                     <div class="card-body">
                         <h5 class="card-title">Waqas Ahmed</h5>
                         <p class="card-text">Founder & CEO</p>
@@ -210,10 +233,10 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card h-100">
-                    <img src="https://mlpma8bvuhmo.i.optimole.com/w:auto/h:auto/q:mauto/ig:avif/https://xactmind.com/wp-content/uploads/2024/02/waqas-ahmed-xactmind-e1707101961410.jpg"
-                        class="card-img-top" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuu4sCi2XT79Fr_VW9OB6HoxLRTWXW9X8oVg&s"
+                        class="car-img-top" alt="">
                     <div class="card-body">
-                        <h5 class="card-title">saqib tariq</h5>
+                        <h5 class="card-title">trump</h5>
                         <p class="card-text">Director (Accounts & HR)</p>
                     </div>
                     <div class="card-footer">
@@ -223,23 +246,23 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card h-100">
-                    <img src="https://mlpma8bvuhmo.i.optimole.com/w:auto/h:auto/q:mauto/ig:avif/https://xactmind.com/wp-content/uploads/2024/02/waqas-ahmed-xactmind-e1707101961410.jpg"
-                        class="card-img-top" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsCZWNwwbXrUCuZsxOSUafdcrnATVspkNHCA&s"
+                        class="car-img-top" alt="">
                     <div class="card-body">
-                        <h5 class="card-title">bilal ahmed</h5>
+                        <h5 class="card-title">pm.imran khan</h5>
                         <p class="card-text">Chief Technology Officer (CTO)</p>
                     </div>
-                    <div class="card-footer">
+                    <div class="car-footer">
                         <a href="#" class="btn btn-primary btn-sm">View Profile</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card h-100">
-                    <img src="https://mlpma8bvuhmo.i.optimole.com/w:auto/h:auto/q:mauto/ig:avif/https://xactmind.com/wp-content/uploads/2024/02/waqas-ahmed-xactmind-e1707101961410.jpg"
-                        class="card-img-top" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA0S-sMOUUkz7_JG66DB7HJe-HUrSkJ3sh6w&s"
+                        class="car-img-top" alt="">
                     <div class="card-body">
-                        <h5 class="card-title">mr.hamza</h5>
+                        <h5 class="card-title">maryum nawaz</h5>
                         <p class="card-text">Business Manager </p>
                     </div>
                     <div class="card-footer">
@@ -259,12 +282,12 @@
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
                     <img src="https://incubator.ucf.edu/wp-content/uploads/2023/07/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1-1500x1000.jpg"
-                        class="card-img-top" alt="">
+                         class="car-img-top" alt="AI Project Image">
                     <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis,
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis,
                             eligendi corrupti similique dicta, officiis enim quam impedit consequuntur explicabo
-                            voluptas
-                            error tempore labore? Quaerat maxime aspernatur, vero enim natus quis.</p>
+                            voluptas error tempore labore? Quaerat maxime aspernatur, vero enim natus quis.</p>
                     </div>
                     <div class="card-footer">
                         <a href="#" class="btn btn-primary btn-sm">Learn More</a>
@@ -273,12 +296,13 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="https://incubator.ucf.edu/wp-content/uploads/2023/07/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1-1500x1000.jpg"
-                        class="card-img-top" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2LLGYurVKWud85kZozXTU0ybJ9i1qsopbNA&sg"
+                         class="car-img-top" alt="Machine Learning Project Image">
                     <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis officia
-                            deserunt tempore sint aperiam. Voluptatum minus eligendi tempore
-                            odio assumenda quisquam repudiandae. Sed sit fugiat, cumque rem consequatur natus optio!</p>
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis officia
+                            deserunt tempore sint aperiam. Voluptatum minus eligendi tempore odio assumenda quisquam
+                            repudiandae. Sed sit fugiat, cumque rem consequatur natus optio!</p>
                     </div>
                     <div class="card-footer">
                         <a href="#" class="btn btn-primary btn-sm">Learn More</a>
@@ -287,13 +311,14 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="https://incubator.ucf.edu/wp-content/uploads/2023/07/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1-1500x1000.jpg"
-                        class="card-img-top" alt="">
+                    <img src="https://st2.depositphotos.com/34809868/42492/i/450/depositphotos_424928032-stock-photo-world-wide-web-global-network.jpg"
+                         class="car-img-top" alt="Data Analytics Project Image">
                     <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
                             accusantium molestiae perspiciatis. Autem inventore odit ipsum possimus facilis in
-                            accusamus, natus tempore
-                            dignissimos, quasi mollitia expedita iusto, necessitatibus dolor quam!</p>
+                            accusamus, natus tempore dignissimos, quasi mollitia expedita iusto, necessitatibus dolor
+                            quam!</p>
                     </div>
                     <div class="card-footer">
                         <a href="#" class="btn btn-primary btn-sm">Learn More</a>
@@ -301,6 +326,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
         <div class="text-center mt-4">
             <a href="#" class="btn btn-primary">View All Case Studies</a>
@@ -556,18 +582,21 @@
                         </form>
                     </div>
                     <div class="col-md-4 text-center">
-                        <img src="https://mlpma8bvuhmo.i.optimole.com/w:1018/h:1024/q:mauto/ig:avif/https://xactmind.com/wp-content/uploads/2023/03/xact-mind-logo-e1706961199736.png" alt="Logo" class="mb-3" style="height: 50px;">
+                        <img src="https://mlpma8bvuhmo.i.optimole.com/w:1018/h:1024/q:mauto/ig:avif/https://xactmind.com/wp-content/uploads/2023/03/xact-mind-logo-e1706961199736.png"
+                            alt="Logo" class="mb-3" style="height: 50px;">
                         <button class="btn btn-primary mb-3">Schedule Consultation</button>
                     </div>
                 </div>
                 <div class="row text-center mt-4">
                     <div class="col-md-12">
                         <p class="mb-1">Phone(s): 03498887772| 03488829408</p>
-                        <p>&copy; 2024 Xact Mind - <a href="#" class="text-secondary text-decoration-none">Privacy
+                        <p>&copy; 2024 SaqibRaja- <a href="#" class="text-secondary text-decoration-none">Privacy
                                 Policy</a></p>
                         <div class="d-flex justify-content-center">
-                            <a href="#" class="text-secondary mx-3 fs-4"><i class="https://www.facebook.com/profile.php?id=100067731198011&mibextid=LQQJ4d"></i></a>
-                            <a href="#" class="text-secondary mx-3 fs-4"><i class="https://www.instagram.com/dynamic_dargons9/profilecard/?igsh=MWUzcmluZWx6Z29oag=="></i></a>
+                            <a href="#" class="text-secondary mx-3 fs-4"><i
+                                    class="https://www.facebook.com/profile.php?id=100067731198011&mibextid=LQQJ4d"></i></a>
+                            <a href="#" class="text-secondary mx-3 fs-4"><i
+                                    class="https://www.instagram.com/dynamic_dargons9/profilecard/?igsh=MWUzcmluZWx6Z29oag=="></i></a>
                         </div>
                     </div>
                 </div>
